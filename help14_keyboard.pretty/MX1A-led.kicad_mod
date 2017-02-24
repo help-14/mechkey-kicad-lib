@@ -1,0 +1,19 @@
+(module MX1A-led (layer F.Cu) (tedit 58A3F727)
+  (fp_text reference MXLED (at 3.683 -5.969) (layer F.SilkS) hide
+    (effects (font (thickness 0.3048)))
+  )
+  (fp_text value VAL** (at -3.9 -5.825) (layer F.SilkS) hide
+    (effects (font (thickness 0.3048)))
+  )
+  (fp_line (start -7.62 -7.62) (end 7.62 -7.62) (layer F.SilkS) (width 0.381))
+  (fp_line (start 7.62 -7.62) (end 7.62 7.62) (layer F.SilkS) (width 0.381))
+  (fp_line (start 7.62 7.62) (end -7.62 7.62) (layer F.SilkS) (width 0.381))
+  (fp_line (start -7.62 7.62) (end -7.62 -7.62) (layer F.SilkS) (width 0.381))
+  (pad 1 thru_hole rect (at -1.27 5.08) (size 2 2) (drill oval 1.4) (layers *.Cu *.Mask))
+  (pad 2 thru_hole oval (at 1.27 5.08) (size 2 2) (drill oval 1.4) (layers *.Cu *.Mask))
+  (model LEDs.3dshapes/LED-3MM.wrl
+    (at (xyz 0 -0.2 0.25))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 1 1 90))
+  )
+)
